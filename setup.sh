@@ -15,7 +15,8 @@ brew cask install java8
 # 
 
 brew install maven
-touch ~/.m2/settings.test
+mv ~/.m2/settings.xml ~/.m2/settings.xml.bak
+touch ~/.m2/settings.xml
 echo '<?xml version="1.0" encoding="UTF-8"?>
 <settings xmlns="http://maven.apache.org/SETTINGS/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
   <mirrors>
@@ -38,24 +39,25 @@ echo '<?xml version="1.0" encoding="UTF-8"?>
       <password>{your encrypted pwd}</password>
     </server>
   </servers> -->
-</settings>' >> ~/.m2/settings.test
-
-cp ~/.m2/settings.test ~/.m2/settings.xml
+</settings>' >> ~/.m2/settings.xml
 
 #
 # setup git
 #
 brew install git
 git config --global user.name "Peter Fox"
-git config --global user.email peter.fox@ad-juster.com
+git config --global user.email peter.fox@somewhere.com
 
 #  Configure GitLab
-ssh-keygen -t rsa -C "peter.fox@ad-juster.com" -b 4096
+ssh-keygen -t rsa -C "peter.fox@somewhere.com" -b 4096
 pbcopy < ~/.ssh/id_rsa.pub
 # add key to your gitlab: settings -> ssh keys
 
 #Install IntelliJ
 brew cask install intellij-idea-ce
+
+#Install PyCharm
+brew cask install pycharm-ce
 
 #Install Visual Studio Code
 brew cask install visual-studio-code
