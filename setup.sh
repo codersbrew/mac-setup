@@ -3,7 +3,6 @@
 #install homebrew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-
 brew cask install google-chrome
 brew cask install slack
 
@@ -75,6 +74,8 @@ mysql_secure_installation
 #
 brew cask install zsh zsh-completions
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+#https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
 brew cask install caffeine
 brew cask install licecap
 brew cask install sublime-text
