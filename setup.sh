@@ -8,6 +8,7 @@ brew install --cask google-chrome
 brew install --cask discord
 brew install --cask google-cloud-sdk
 brew install --cask iterm2
+brew install the_silver_searcher
 bew install zsh
 
 #Setup Terminal - https://catalins.tech/improve-mac-terminal/
@@ -66,7 +67,7 @@ ssh-keygen -t ed25519 -C "xxx@essenburg.com"
 brew install --cask webstorm
 
 #Install Visual Studio Code
-brew install --cask visual-studio
+brew install --cask visual-studio-code
 
 #
 # Install MySQL
