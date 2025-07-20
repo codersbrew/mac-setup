@@ -40,8 +40,8 @@ Set the Zsh theme in the ~/.zshrc file to agnoster, as it provides excellent 
 Step 6: Configure Git
 
 Use git config --global to set the following configuration values precisely:
-user.name "Matthew Essenburg"
-user.email "matthew@essenburg.com"
+user.name "XXXXXX"
+user.email "XXXXX"
 alias.st status
 alias.ci commit
 alias.br branch
